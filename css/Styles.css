@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: background: #EAF2E3;
+}
+
+html{
+  background: #EAF2E3;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #49efb9;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+h1{
+  padding: 5px;
+  width: 270px;
+  background: #49efb9;
+  text-align: center;
+  border: 5px solid black;
+  float: left;
+  margin: 10px -75px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 40px;
+
+  position: relative;
+}
+
+nav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+color: black;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  margin: -5px 0px;
+  bottom: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*HOME PAGE
+*/
+
+.hook {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 0;
+}
+
+.business {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.pwhy{
+  float: left;
+  padding-top: 80px;
+  text-align: left;
+  padding-right: 75px;
+  background-color: #BA3B46;
+  
+}
+
+.why {
+  text-align: left;
+  padding-left: 233px;
+  padding-right: 0;
+  width: 500px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.meeting {
+  text-align: center;
+  padding-top: 86px;
+  padding-bottom: 50px;
+  margin: 0;
+
+/* About page
+*/
+
+.under-nav{
+  position: relative;
+}
+
+h3 {
+position: absolute;
+top: 80px;
+left: 14.08%;
+font-size: 45px;
+
+}
+
+.photo-me {
+  position: absolute;
+  top: 140px;
+  left: 14.24%;
+}
+
+.about-box {
+  position: absolute;
+  top: 140px;
+  left: 55%;
+  width: 500px
+}
+
+.indent {
+text-indent: 50px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.first-para {
+  padding-bottom: 10px;
+}
+
+.second-para {
+  padding: 0;
+}
+
+/*Contact Page
+*/
+
+.hand {
+  text-align: center;
+  padding-top: 125px;
+  }
+
+  .center {
+    position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  h4 {
+    color: black;
+    font-size: 35px;
+  }
+
+  /* comment box
+  */
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #49efb9;
+  color: back;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #00D891;
+}
+
+/* Add a background color and some padding around the form */
+.container-fill {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
